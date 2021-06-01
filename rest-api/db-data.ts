@@ -1,3 +1,4 @@
+import { Course } from '../shared/course';
 
 export const USERS = {
   1: {
@@ -710,7 +711,7 @@ export function findAllUsers() {
   return <any[]> Object.values(USERS);
 }
 
-export function findAllCourses() {
+export function findAllCourses(): Course[] {
   return Object.values(COURSES);
 }
 
